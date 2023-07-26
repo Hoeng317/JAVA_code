@@ -18,9 +18,10 @@ class SpecialItem extends Item {
     }
 
     @Override
+ 
 public String toString() {
     String itemName = getName()+ "+";
-    int price = getPrice();
+    int price = super.getPrice();     // super
     String BonusPrice = "" + getBonusPrice();
     return String.format("Item{%s, %s, %s}", itemName, price, BonusPrice);
     }
