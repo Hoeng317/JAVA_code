@@ -1,0 +1,28 @@
+package javaStudy;
+import java.util.Scanner;
+
+public class java {
+	
+	    public static void main(String[] args) {
+	    	 Scanner sc = new Scanner(System.in);
+
+	         
+	    	 System.out.print("국영수 점수 : ");
+	    	 int korea = sc.nextInt();
+	         int math = sc.nextInt();
+	         int english = sc.nextInt();
+
+	         double avg = (korea + math + english) / 3.0;
+
+	         System.out.println("입력하신 점수는 " + korea + "  " + math + "  " + english);
+	         System.out.printf("평균 점수: %.2f\n", avg);
+
+	         if (avg >= 80) {
+	             System.out.println("^_^");
+	         } else if (avg >= 50) {
+	             System.out.println("-_-");
+	         } else {
+	             System.out.println("T_T");
+	         }
+	     }
+	 }
